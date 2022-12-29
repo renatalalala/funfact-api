@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4567:4567"
+    links:
+      - "postgres"
+    env_file: "./common.env"
+  postgres:
+    image: "postgres"
+    env_file: "./common.env"
