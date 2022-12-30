@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: FunFactAPI
+    name: "FunFact API"
     env: docker
     plan: free
     branch: main
