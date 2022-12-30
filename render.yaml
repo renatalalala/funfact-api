@@ -3,6 +3,7 @@ databases:
     databaseName: funfacts 
     user: funfactapi
     region: oregon
+    plan: free
 
 services:
   - type: web
