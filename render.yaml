@@ -15,5 +15,5 @@ services:
     envVars:
       - key: DB_URL
         fromDatabase:
-          name: funfacts
+          name: "FunFact DB"
           property: connectionString
