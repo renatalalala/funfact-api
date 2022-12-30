@@ -5,4 +5,4 @@ RUN bundle install
 COPY *.rb .
 COPY config.ru .
 
-ENTRYPOINT ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:4567"]
+CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:80"]
