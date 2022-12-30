@@ -1,7 +1,7 @@
 require 'json'
 require 'sequel'
 
-DB = Sequel.postgres(host: ENV["POSTGRES_HOST"], user: ENV["POSTGRES_USER"], password: ENV["POSTGRES_PASSWORD"])
+DB = Sequel.connect(ENV["DB_URL"])
 
 # create an items table
 DB.create_table? :funfacts do
