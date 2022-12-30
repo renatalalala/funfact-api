@@ -12,6 +12,8 @@ services:
     plan: free
     branch: main
     region: oregon
+    healthCheckPath: /funfacts
+    numInstances: 3
     envVars:
       - key: DB_URL
         fromDatabase:
