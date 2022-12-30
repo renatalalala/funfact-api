@@ -1,7 +1,7 @@
 databases:
   - name: "FunFact DB"
     databaseName: funfacts 
-    user: funfact-api
+    user: funfactapi
     region: oregon
 
 services:
