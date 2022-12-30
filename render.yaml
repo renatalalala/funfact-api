@@ -13,7 +13,7 @@ services:
     branch: main
     region: oregon
     healthCheckPath: /funfacts
-    numInstances: 3
+    numInstances: 1
     envVars:
       - key: DB_URL
         fromDatabase:
