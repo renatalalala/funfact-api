@@ -14,6 +14,7 @@ class Model
   @@db = DB[:funfacts]
 
   def to_hash()
+    hash = {}
     self.instance_variables.each {|x|
       hash[x[1..]] = self.instance_variable_get(x)
     }
