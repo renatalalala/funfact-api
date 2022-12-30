@@ -5,14 +5,14 @@ databases:
     region: oregon
 
 services:
-  type: web
-  name: FunFactAPI
-  env: docker
-  plan: free
-  branch: main
-  region: oregon
-  envVars:
-    - key: DB_URL
-      fromDatabase:
-        name: funfacts
-        property: connectionString
+  - type: web
+    name: FunFactAPI
+    env: docker
+    plan: free
+    branch: main
+    region: oregon
+    envVars:
+      - key: DB_URL
+        fromDatabase:
+          name: funfacts
+          property: connectionString
